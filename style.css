@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+h1{
+   margin: 10px;
+}
+.box {
+  background-color: rgb(163, 235, 174);
+  border: 2px solid green;
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ border-radius: 5px;
+ box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+ transform: translateX(200%);
+ transition: transform 0.4s ease;
+}
+.box:nth-of-type(even){
+     transform: translateX(-200%);
+}
+.box.show{
+    transform: translate(0);
+}
